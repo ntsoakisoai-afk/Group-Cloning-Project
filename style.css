@@ -1,7 +1,16 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin:0;
-    padding:0;
+    margin:0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /*padding-bottom: 80px*/;
     background: #f0f0f0;
     color: #333;
 }
@@ -27,7 +36,7 @@ header{
 }
 
 .logo-title img {
-    width: 60px;
+    width: 150px;
     height: auto;
 }
 
@@ -47,28 +56,30 @@ header{
     height: auto;
 }
 
-footer{
-    background-color: #5b5b5f;
-    color: white;
-    text-align: center;
-    padding: 1em;
-}
-
 .navbar{
     display: flex;
     flex-wrap: wrap;
     padding: 0;
     margin:0;
+    width: 100%;
+    box-sizing: border-box;
     list-style: none;
     justify-content: center;
     background-color: #0c8f58;
 }
 
 .navbar a{
-    color: #0e0303;
+    color: black;
     text-decoration: none;
     padding: 14px 20px;
     display: block;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover{
+    background-color: #f8f8f8;
+    color: #0c8f58;
 }
 
 .navbar li{
@@ -80,11 +91,19 @@ footer{
 }
 
 .dropdown{
-    display: none;
+    
+    max-width:100vw;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    background-color: rgb(255, 136, 0);
+    top: 100%;
+    left: 0;
     position: absolute;
-    background-color: rgb(255, 153, 0);
-    min-width: 250px;
-    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 4px 8px black;
+    transition: opacity 0.3s ease;
 }
 
 .dropdown a{
@@ -93,7 +112,8 @@ footer{
 }
 
 .navbar li:hover .dropdown{
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 nav ul{
@@ -107,25 +127,33 @@ nav ul li{
     position: relative;
 }
 
+@keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+
 .right {
-    animation: normal;
-    color: red;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(248, 209, 33);
+    animation: fadIn 0.5s ease-in;
+    color: rgb(163, 22, 22);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .right a{
-    background-color: blue;
-    color: white;
+    color: rgb(4, 54, 2);
+    padding: O 5px;
+    text-decoration: none;
 }
 main{
-    padding: 2rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 100%;
     background-color: white;
-    margin: 60px ;
+    margin: 60px auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
+    max-width: 1000px;
+    min-height: 400px;
 }
 
 
@@ -134,44 +162,44 @@ footer{
     color: white;
     text-align: center;
     padding: 1rem;
-    position: fixed;
+    position: static;
     width: 100%;
     bottom: 0;
 }
 /* Weather Table Styles */
-#weather-table {
-  width: 80%;
-  margin: 20px auto;
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
+    #weather-table {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    }
 
-#weather-table h2 {
-  text-align: center;
-  margin-bottom: 15px;
-  color: #4a90e2;
-}
+    #weather-table h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #4a90e2;
+    }
 
-#weather-table table {
-  width: 100%;
-  border-collapse: collapse;
-}
+    #weather-table table {
+    width: 100%;
+    border-collapse: collapse;
+    }
 
-#weather-table th,
-#weather-table td {
-  border: 1px solid #ccc;
-  padding: 10px;
-}
+    #weather-table th,
+    #weather-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    }
 
-#weather-table th {
-  background-color: #4a90e2;
-  color: white;
-}
+    #weather-table th {
+    background-color: #4a90e2;
+    color: white;
+    }
 
-#weather-table tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
+    #weather-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+    }
 
-#weather-table td {
-  font-size: 14px;
-}
+    #weather-table td {
+    font-size: 14px;
+    }

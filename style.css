@@ -336,3 +336,42 @@ footer{
     #weather-table td {
     font-size: 14px;
     }
+/* Sidebar Styles*/
+.weather-sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-shadow: -20px 0 50px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: colummn;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+.weather-sidebar h2{
+    margin-bottom: 20px;
+    font-size: 20px;
+color: #333;
+}
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weather-icon h3{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+.weather-info h3{
+    margin: 5px 0;
+    color: #222;
+}
+.weather-info p{
+    margin: 2px 0;
+    color: #555;
+}

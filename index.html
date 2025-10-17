@@ -1,364 +1,419 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>SAWS Home - WeatherSA Portal</title>
-            <link rel="icon" type="images/SAWS" href="images/SAWS logoFINAL.png">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-            <link rel="stylesheet" href="style.css" />
-        </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAWS Home - WeatherSA Portal</title>
+    <link rel="icon" type="images/SAWS" href="images/SAWS logoFINAL.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo-title">
+                <img src="images/SAWS logoFINAL.png" alt="Logo">
+                <h1>SOUTH AFRICAN WEATHER SERVICE</h1>
+            </div>
+            <div class="other">
+                <img src="images/DEFF_LOGO.jpg" alt="Logo">
+            </div>
+        </div>
+    </header>
 
-        <body>
-            <header>
-                <div class="top-bar">
-                    <div class="logo-title">
-                        <img src="images/SAWS logoFINAL.png" alt="Logo">
-                        <h1>SOUTH AFRICAN WEATHER SERVICE</h1>
-                    </div>
-
-                    <div class="other">
-                    <img src="images/DEFF_LOGO.jpg" alt="Logo">
+    <nav>
+        <ul class="navbar">
+            <li>
+                <a href="#">Weather</a>
+                <div class="dropdown">
+                    <a href="">Current Conditions</a>
+                    <a href="">Satellite</a>
+                    <a href="">Other Provinces</a>
                 </div>
+            </li>
+            <li>
+                <a href="#">Forecast</a>
+                <div class="dropdown">
+                    <a href="#">Weather Forecast</a>
+                    <a href="#">Marine Forecast</a>
+                    <a href="#">Long Range Forecast</a>
+                    <a href="#">Seasonal Forecast</a>
+                    <a href="#">Travellers Forecast</a>
+                    <a href="#">Regional Forecast</a>
+                    <a href="#">Fire Danger Indicator</a>
                 </div>
-            </header>
+            </li>
+            <li>
+                <a href="#">Observations</a>
+                <div class="dropdown">
+                    <a href="#">Satellite Images</a>
+                    <a href="#">Synoptic Charts</a>
+                    <a href="#">Marine Observations</a>
+                    <a href="#">Storm Tracker</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Climate</a>
+                <div class="dropdown">
+                    <a href="#">About Climate at SAWS</a>
+                    <a href="#">Historical Rain Maps</a>
+                    <a href="#">Recent Climate</a>
+                    <a href="#">Historical Synoptic Charts</a>
+                    <a href="#">Climate Change Atlas</a>
+                    <a href="#">Annual State of the Climate</a>
+                    <a href="#">Extreme Climate Indices</a>
+                    <a href="#">Regional Weather and Climate of SA</a>
+                    <a href="#">Drought Monitoring Desk</a>
+                    <a href="#">Climate Information Customer Survey</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Media</a>
+                <div class="dropdown">
+                    <a href="#">Media Releases</a>
+                    <a href="#">WeatherSmart Newsletter</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Product & Services</a>
+                <div class="dropdown">
+                    <a href="#">SAWS Services</a>
+                    <a href="#">Metocean Services</a>
+                    <a href="#">Industry Services</a>
+                    <a href="#">Lighting Services</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Careers</a>
+                <div class="dropdown">
+                    <a href="#">Vacancies</a>
+                    <a href="#">Bursaries</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">FAQs</a>
+                <div class="dropdown">
+                    <a href="#">Climate Questions</a>
+                    <a href="#">Educational Questions</a>
+                    <a href="#">Weather Questions</a>
+                    <a href="#">Impact-based Information</a>
+                    <a href="#">Weather Awareness Brochures</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+                <div class="dropdown">
+                    <a href="#">Climate Data Request</a>
+                    <a href="#">Contact Details</a>
+                    <a href="#">Complaints and Compliments</a>
+                    <a href="#">Partners and Clients</a>
+                    <a href="#">General Enquiries</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">About</a>
+                <div class="dropdown">
+                    <a href="#">About Us</a>
+                    <a href="#">Organisation Overview</a>
+                    <a href="#">Board Members</a>
+                    <a href="#">Executive and Senior Management</a>
+                    <a href="#">Regional Training Center</a>
+                    <a href="#">Applicable Legislation</a>
+                    <a href="#">Annual Reports</a>
+                    <a href="#">Tender Documents</a>
+                    <a href="#">RFQ Documents</a>
+                    <a href="#">POPIA</a>
+                    <a href="#">PAIA</a>
+                    <a href="#">Strategic and Annual Performance Plans</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
 
-                <nav>
-                    <ul class="navbar">
-                        <li>
-                            <a href= "#">Weather</a>
-                            <div class="dropdown">
-                                <a href="">Current Conditions</a>
-                                <a href="">Satellite</a>
-                                <a href="">Other Provinces</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href= "#">Forecast</a>
-                            <div class="dropdown">
-                                <a href="#">Weather Forecast</a>
-                                <a href="#">Marine Forecast</a>
-                                <a href="#">Long Range Forecast</a>
-                                <a href="#">Seasonal Forecast</a>
-                                <a href="#">Travellers Forecast</a>
-                                <a href="#">Regional Forecast</a>
-                                <a href="#">Fire Danger Indicator</a>
-                            </div>
-                        </li>
+    <marquee class="right">
+        Monitoring Weather, Safeguarding Our Air: Championing Climate Action at G20 Summit. 
+        Learn how we are making a difference <a href="">Click Here!</a>
+    </marquee>
 
-                        <li>
-                            <a href= "#">Observations</a>
-                            <div class="dropdown">
-                                <a href="#">Satellite Images</a>
-                                <a href="#">Synoptic Charts</a>
-                                <a href="#">Marine Observations</a>
-                                <a href="#">Storm Tracker</a>
-                            </div>
-                        </li>
+    <main>
+        <div class="weather-container">
+            <div class="top-section">
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Enter City..." />
+                    <button>Search</button>
+                </div>
 
-                        <li>
-                            <a href= "#">Climate</a>
-                            <div class="dropdown">
-                                <a href="#">About Climate at SAWS</a>
-                                <a href="#">Historical Rain Maps</a>
-                                <a href="#">Recent Climate</a>
-                                <a href="#">Historical Synoptic Charts</a>
-                                <a href="#">Climate Change Atlas</a>
-                                <a href="#">Annual State of the Climate</a>
-                                <a href="#">Extreme Climate Indices</a>
-                                <a href="#">Regional Weather and Climate of SA</a>
-                                <a href="#">Drought Monitoring Desk</a>
-                                <a href="#">Climate Information Customer Survey</a>
-                            </div>
-                        </li>
+                <div class="current-weather">
+                    <h1>Johannesburg</h1>
+                    <p class="curr">Current</p>
+                    <p class="temp">20°C</p>
+                    <p class="cond">Partly Cloudy</p>
+                </div>
 
-                        <li>
-                            <a href= "#">Media</a>
-                            <div class="dropdown">
-                                <a href="#">Media Releases</a>
-                                <a href="#">WeatherSmart Newsletter</a>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href= "#">Product & Services</a>
-                            <div class="dropdown">
-                                <a href="#">SAWS Services</a>
-                                <a href="#">Metocean Services</a>
-                                <a href="#">Industry Services</a>
-                                <a href="#">Lighting Services</a>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href= "#">Careers</a>
-                            <div class="dropdown">
-                                <a href="#">Vacancies</a>
-                                <a href="#">Bursaries</a>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href= "#">FAQs</a>
-                            <div class="dropdown">
-                                <a href="#">Climate Questions</a>
-                                <a href="#">Educational Questions</a>
-                                <a href="#">Weather Questions</a>
-                                <a href="#">Impact-based Information</a>
-                                <a href="#">Weather Awareness Brochures</a>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href= "#">Contact</a>
-                            <div class="dropdown">
-                                <a href="#">Climate Data Request</a>
-                                <a href="#">Contact Details</a>
-                                <a href="#">Complaints and Compliments</a>
-                                <a href="#">Partners and Clients</a>
-                                <a href="#">General Equiries</a>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href= "#">About</a>
-                            <div class="dropdown">
-                                <a href="#">About Us</a>
-                                <a href="#">Organisation Overview</a>
-                                <a href="#">Board Members</a>
-                                <a href="#">Executive and Senior Management</a>
-                                <a href="#">Regional Training Center</a>
-                                <a href="#">Applicable Legislation</a>
-                                <a href="#">Annual Reports</a>
-                                <a href="#">Tender Documents</a>
-                                <a href="#">RFQ Documents</a>
-                                <a href="#">POPIA</a>
-                                <a href="#">PAIA</a>
-                                <a href="#">Stategic and Annual Performance Plans</a>
-                            </div>
-                        </li>
+                <div class="forecast-panel">
+                    <ul class="forecast-list">
+                        <li><i class="wi wi-humidity"></i>Humidity<span class="value">70%</span></li>
+                        <li><i class="wi wi-thermometer"></i>Min Temp<span class="value temp-c">12°C</span> <span class="value temp-f">54°F</span></li>
+                        <li><i class="wi wi-thermometer"></i>Max Temp<span class="value temp-c">26°C</span> <span class="value temp-f">79°F</span></li>
+                        <li><i class="wi wi-raindrop"></i>Weather Condition<span class="value">Showers and Thundershowers</span></li>
+                        <li><i class="wi wi-wind-direction"></i>Wind Direction<span class="value">NNE</span></li>
+                        <li><i class="wi wi-windy"></i>Wind Speed<span class="value">15.0kt | 27.8km/h</span></li>
+                        <li><i class="wi wi-raindrop"></i>Rain Amount<span class="value">3mm</span></li>
+                        <li><i class="wi wi-sunrise"></i>Sunrise/Sunset<span class="value">05:30 / 18:00</span></li>
                     </ul>
-                </nav>
-                
-                <marquee class="right">Monitoring Weather, Safeguarding Our Air: Championing Climate Action at G20 Summit Learn How we are making a difference <a href="">Click Here!</a></marquee>
-                <div class="content">
-
-                </div>
-            <main >
-                <div class="weather-container">
-
-                    <div class="top-section">
-                        
-                        <div class="search">
-                            <i class="fa fa-search"></i>
-                            <input type="text" placeholder="Enter City..." />
-                            <button>Search</button>
-                        </div>
-                        
-                
-                        <div class="Current-weather">
-                            <h1>Johannesburg</h1><br>
-
-                            <p class="curr">current</p>
-                            <p class="temp">20◦C</p>
-                            <p class="cond">Partly Cloudy</p>
-                        </div>
-                    
-                    
-                    <div class="forecast-panel">
-                        <ul class="forecast-list">
-                            <li><i class="wi wi-humility"></i>Humidity<span class="value">70%</span></li>
-                            <li><i class="wi wi-thermometer"></i>Minimum Temperature
-                                <span class="value temp-c">12°C</span>
-                                <span class="value temp-f">54°F</span>
-                            </li>
-                            <li><i class="wi wi-thermometer"></i>Maximum Temperature
-                                <span class="value temp-c">26°C</span>
-                                <span class="value temp-f">79°F</span>
-                            </li>
-                            <li><i class="wi wi-raindrop"></i>Weather Condition<span class="value">Showers and Thundershowers</span></li>
-                            <li><i class="wi wi-wind-direction"></i>Wind Direction<span class="value">NNE</span></li>
-                            <li><i class="wi wi-windy"></i>Wind Speed<span class="value">15.0kt|27.8km/h</span></li>
-                            <li><i class="wi wi-raindrop"></i>Rain Amount<span class="value">3mm</span></li>
-                            <li><i class="wi wi-sunrise"></i>Sunrise/Sunset<span class="value">05:30/18:00</span></li>
-                        </ul>
-
-                        <form class="forecast-form" action="/home/passcity" method="post">
-                            <input type="hidden" name="passcity" value="Johannesburg">
-                            <button type="submit">View Detailed Forecast</button>
-                        </form>
+                    <form class="forecast-form" action="/home/passcity" method="post">
+                        <input type="hidden" name="passcity" value="Johannesburg">
+                        <button type="submit">View Detailed Forecast</button>
+                    </form>
                 </div>
             </div>
+        </div>
+
+        <div class="hourly-forecast">
+            <h3>Hourly Forecast</h3>
+            <div class="scroll">
+                <div class="hour"><p>11am</p><p>⛅</p><p>12°</p></div>
+                <div class="hour"><p>12pm</p><p>⛅</p><p>13°</p></div>
+                <div class="hour"><p>13pm</p><p>🌤</p><p>18°</p></div>
+                <div class="hour"><p>14pm</p><p>🌞</p><p>29°</p></div>
+                <div class="hour"><p>15pm</p><p>🌞</p><p>30°</p></div>
+                <div class="hour"><p>16pm</p><p>🌤</p><p>28°</p></div>
+                <div class="hour"><p>17pm</p><p>⛅</p><p>14°</p></div>
             </div>
-            <div class="hourly-forecast">
-                        <h3>Hourly Forecast</h3>
-                        <div class="scroll">
-                            <div class="hour">
-                                <p>11am</p>
-                                <p>⛅</p>
-                                <p>12°</p>
-                            </div>
+        </div>
 
-                            <div class="hour">
-                                <p>12pm</p>
-                                <p>⛅</p>
-                                <p>13°</p>
-                            </div>
+        
+<section class="popular-cities">
+    <h2>Popular Cities - 3-Day Forecast</h2>
 
-                            <div class="hour">
-                                <p>13pm</p>
-                                <p>🌤</p>
-                                <p>18°</p>
-                            </div>
+    <div class="popular-cities-alerts">
+        <!-- Table -->
+        <div id="ten-day-forecast">
+            <table class="cities-table">
+                <thead>
+                    <tr>
+                        <th>City</th>
+                        <th>Today</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pretoria</td>
+                        <td>29° / 16° ☀️</td>
+                        <td>23° / 14° ⛅</td>
+                        <td>30° / 15° ☀️</td>
+                    </tr>
+                    <tr>
+                        <td>Johannesburg</td>
+                        <td>25° / 14° ⛅</td>
+                        <td>20° / 12° 🌧️</td>
+                        <td>26° / 14° ☀️</td>
+                    </tr>
+                    <tr>
+                        <td>Cape Town</td>
+                        <td>28° / 11° ☀️</td>
+                        <td>21° / 15° 🌤️</td>
+                        <td>22° / 14° ⛅</td>
+                    </tr>
+                    <tr>
+                        <td>Durban</td>
+                        <td>21° / 14° 🌧️</td>
+                        <td>28° / 17° ☀️</td>
+                        <td>21° / 18° ⛅</td>
+                    </tr>
+                    <tr>
+                        <td>Bloemfontein</td>
+                        <td>31° / 10° ☀️</td>
+                        <td>25° / 15° ⛅</td>
+                        <td>26° / 12° ☀️</td>
+                    </tr>
+                    <tr>
+                        <td>Polokwane</td>
+                        <td>20° / 14° ⛅</td>
+                        <td>27° / 13° ☀️</td>
+                        <td>25° / 13° ⛅</td>
+                    </tr>
+                    <tr>
+                        <td>Upington</td>
+                        <td>33° / 17° ☀️</td>
+                        <td>30° / 19° ☀️</td>
+                        <td>30° / 17° ☀️</td>
+                    </tr>
+                    <tr>
+                        <td>Port Elizabeth</td>
+                        <td>22° / 9° 🌧️</td>
+                        <td>21° / 15° ⛅</td>
+                        <td>18° / 14° 🌤️</td>
+                    </tr>
+                    <tr>
+                        <td>East London</td>
+                        <td>23° / 11° ⛅</td>
+                        <td>24° / 15° ☀️</td>
+                        <td>19° / 15° 🌧️</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-                            <div class="hour">
-                                <p>14pm</p>
-                                <p>🌞</p>
-                                <p>29°</p>
-                            </div>
-
-                            <div class="hour">
-                                <p>15pm</p>
-                                <p>🌞</p>
-                                <p>30°</p>
-                            </div>
-
-                            <div class="hour">
-                                <p>16pm</p>
-                                <p>🌤</p>
-                                <p>28°</p>
-                            </div>
-
-                            <div class="hour">
-                                <p>17pm</p>
-                                <p>⛅</p>
-                                <p>14°</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                <section>
-                    <section id="weather-table">
-    <h2>10-Day Forecast</h2>
-    <!-- 10-Day Forecast Section -->
-<section id="ten-day-forecast">
-  <h2>10-Day Weather Forecast - Johannesburg</h2>
-  <div class="table-container">
-    <table class="forecast-table">
-      <thead>
-        <tr>
-          <th>Day</th>
-          <th>Date</th>
-          <th>Condition</th>
-          <th>Min Temp</th>
-          <th>Max Temp</th>
-          <th>Icon</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Saturday</td>
-          <td>18 Oct</td>
-          <td>Sunny</td>
-          <td>13°C</td>
-          <td>27°C</td>
-          <td>☀️</td>
-        </tr>
-        <tr>
-          <td>Sunday</td>
-          <td>19 Oct</td>
-          <td>Partly Cloudy</td>
-          <td>14°C</td>
-          <td>25°C</td>
-          <td>⛅</td>
-        </tr>
-        <tr>
-          <td>Monday</td>
-          <td>20 Oct</td>
-          <td>Cloudy</td>
-          <td>15°C</td>
-          <td>24°C</td>
-          <td>☁️</td>
-        </tr>
-        <tr>
-          <td>Tuesday</td>
-          <td>21 Oct</td>
-          <td>Rain Showers</td>
-          <td>12°C</td>
-          <td>22°C</td>
-          <td>🌧️</td>
-        </tr>
-        <tr>
-          <td>Wednesday</td>
-          <td>22 Oct</td>
-          <td>Thunderstorms</td>
-          <td>13°C</td>
-          <td>23°C</td>
-          <td>⛈️</td>
-        </tr>
-        <tr>
-          <td>Thursday</td>
-          <td>23 Oct</td>
-          <td>Windy</td>
-          <td>11°C</td>
-          <td>21°C</td>
-          <td>💨</td>
-        </tr>
-        <tr>
-          <td>Friday</td>
-          <td>24 Oct</td>
-          <td>Sunny</td>
-          <td>13°C</td>
-          <td>26°C</td>
-          <td>☀️</td>
-        </tr>
-        <tr>
-          <td>Saturday</td>
-          <td>25 Oct</td>
-          <td>Partly Cloudy</td>
-          <td>14°C</td>
-          <td>25°C</td>
-          <td>🌤️</td>
-        </tr>
-        <tr>
-          <td>Sunday</td>
-          <td>26 Oct</td>
-          <td>Rain</td>
-          <td>13°C</td>
-          <td>22°C</td>
-          <td>🌧️</td>
-        </tr>
-        <tr>
-          <td>Monday</td>
-          <td>27 Oct</td>
-          <td>Sunny</td>
-          <td>12°C</td>
-          <td>28°C</td>
-          <td>☀️</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+        <!-- Alerts -->
+        <div class="weather-alerts-container">
+            <div class="weather-alert">
+                <i class="fa-solid fa-cloud-showers-heavy alert-icon"></i>
+                <p><strong>Polokwane:</strong> Heavy rainfall expected this evening. Drive safely.</p>
+            </div>
+            <div class="weather-alert">
+                <i class="fa-solid fa-bolt alert-icon"></i>
+                <p><strong>East London:</strong> Thunderstorms expected this afternoon. Avoid waterlogged areas.</p>
+            </div>
+            <div class="weather-alert">
+                <i class="fa-solid fa-wind alert-icon"></i>
+                <p><strong>Cape Town:</strong> Strong winds up to 50 km/h expected. Secure outdoor objects.</p>
+            </div>
+            <div class="weather-alert">
+                <i class="fa-solid fa-sun alert-icon"></i>
+                <p><strong>Bloemfontein:</strong> High UV levels today. Wear sunscreen and protective clothing.</p>
+            </div>
+            <div class="weather-alert">
+                <i class="fa-solid fa-droplet alert-icon"></i>
+                <p><strong>Johannesburg:</strong> Light rain showers throughout the day. Carry an umbrella.</p>
+            </div>
+            <div class="weather-alert">
+                <i class="fa-solid fa-snowflake alert-icon"></i>
+                <p><strong>Boksburg:</strong> Cold front approaching. Expect temperatures to drop sharply.</p>
+            </div>
+            <div class="weather-alert">
+                <i class="fa-solid fa-triangle-exclamation alert-icon"></i>
+                <p><strong>Soweto:</strong> Flood warning in low-lying areas. Avoid rivers and streams.</p>
+            </div>
+            <div class="weather-alert">
+                <i class="fa-solid fa-dust alert-icon"></i>
+                <p><strong>Krugersdorp:</strong> Dust storms likely in the afternoon. Drive carefully.</p>
+            </div>
+            <div class="weather-alert">
+                <i class="fa-solid fa-fire alert-icon"></i>
+                <p><strong>Johannesburg CBD:</strong> Hot and dry conditions. Fire risk is high.</p>
+            </div>
+            <div class="weather-alert">
+                <i class="fa-solid fa-temperature-low alert-icon"></i>
+                <p><strong>Edenvale:</strong> Cold morning expected. Frost likely in some areas.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
-            </main>
-    <!-- Weather Alert -->
-                        <section class="weather alertt">
-                            <h2>⚠️Weather Alert</h2>
-                            <p><strong>Johanessburg</strong>Heavy rainfall expected this evening.Please drive safely and avoid flooded areas.</p>
-                        </section>
-            <footer>
-                <footer class="site-footer">
-                    <div class="footer-content">
-                        <p>2025 South African Weather Service|All Rights Reserved</p>
-                        <p>Made with ❤️by Group Cloud Team</p>
-                        <div class="footer-links">
-                            <a href="#">Privacy Policy</a>
-                            <a href="#">Terms Of Service </a>
-                            <a href="#">Contact Us </a>
-                <p>&copy; 2025 Girlcode Cloning Project</p>
-            </footer>
-                        </div>
-                    </div>
-        </body>
-    </html>
+        </section>
+<section class="focus-area">
+    <h2>Our Focus Areas - Johannesburg</h2>
+    <div class="focus-cards">
+        <div class="focus-card">
+            <img src="images/Focasting.jpg" alt="FORECASTING">
+            <div class="overlay">
+                <i class="fa-solid fa-cloud-sun"></i>
+                <h3>FORECASTING</h3>
+            </div>
+        </div>
+        <div class="focus-card">
+            <img src="images/Climate.jpg" alt="Climate Research">
+            <div class="overlay">
+                <i class="fa-solid fa-temperature-half"></i>
+                <h3>CLIMATE</h3>
+            </div>
+        </div>
+        <div class="focus-card">
+            <img src="images/Aviation.jpg" alt="Aviation">
+            <div class="overlay">
+                <i class="fa-solid fa-plane"></i>
+                <h3>AVIATION</h3>
+            </div>
+        </div>
+        <div class="focus-card">
+            <img src="images/Air quality.jpg" alt="Air quality">
+            <div class="overlay">
+                <i class="fa-solid fa-wind"></i>
+                <h3>AIR QUALITY</h3>
+            </div>
+        </div>
+        <div class="focus-card">
+            <img src="images/Research.jpeg" alt="Research & Innovation">
+            <div class="overlay">
+                <i class="fa-solid fa-flask"></i>
+                <h3>RESEARCH</h3>
+            </div>
+        </div>
+        <div class="focus-card">
+            <img src="images/Marine.jpg" alt="Marine & Sustainability Projects">
+            <div class="overlay">
+                <i class="fa-solid fa-water"></i>
+                <h3>MARINE</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+        
+    </main>
+
+    <footer class="site-footer">
+    <div class="footer-columns">
+
+        <div class="footer-column">
+            <h4>Organisation</h4>
+            <ul>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Bursaries</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Regional Training Center</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Notice</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Products & Services</h4>
+            <ul>
+                <li><a href="#">WeatherSmart API</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Contact</h4>
+            <p><a href="mailto:info4@weathersa.co.za">Climate Data Request</a></p>
+            <p><a href="mailto:complaints@weathersa.co.za">Complaints & Compliments</a></p>
+            <p><a href="mailto:partnersupport@weathersa.co.za">Partners & Clients</a></p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Head Office</h4>
+            <p>No. 1263 Heuwel Road, Centurion Central</p>
+            <p>Private Bag X097, Pretoria 0001</p>
+            <p>Tel: +27 12 367 6000</p>
+            <p><a href="mailto:generalenquiries@weathersa.co.za">generalenquiries@weathersa.co.za</a></p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Provincial Demarcations</a></li>
+                <li><a href="#">Automatic Rain Station Portal</a></li>
+                <li><a href="#">Aviation</a></li>
+                <li><a href="#">RSMC</a></li>
+                <li><a href="#">SAAQIS</a></li>
+                <li><a href="#">WMO</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2025 South African Weather Service. All Rights Reserved.
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+

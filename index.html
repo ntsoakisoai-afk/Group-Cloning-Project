@@ -146,19 +146,9 @@
                 </div>
             <main >
                 <div class="weather-container">
-                    <!-- left Sidebar -->
-<aside classs="weather-sidebar">
-    <h2>Today's Weather</h2>
-    <div class="weather-info">
-        <img src="images/sunng.png" alt="🌥️partly cloudy" class="weather-icon">
-        <div>
-            <h3>Johannesburg</h3>
-            <p>20°C</p>
-            <p>🌥️partly cloudy</p>
-        </div>
-    </div>
-</aside>
-                    <div class="left">
+
+                    <div class="top-section">
+                        
                         <div class="search">
                             <i class="fa fa-search"></i>
                             <input type="text" placeholder="Enter City..." />
@@ -174,7 +164,33 @@
                             <p class="cond">Partly Cloudy</p>
                         </div>
                     
-                    <div class="hourly-forecast">
+                    
+                    <div class="forecast-panel">
+                        <ul class="forecast-list">
+                            <li><i class="wi wi-humility"></i>Humidity<span class="value">70%</span></li>
+                            <li><i class="wi wi-thermometer"></i>Minimum Temperature
+                                <span class="value temp-c">12°C</span>
+                                <span class="value temp-f">54°F</span>
+                            </li>
+                            <li><i class="wi wi-thermometer"></i>Maximum Temperature
+                                <span class="value temp-c">26°C</span>
+                                <span class="value temp-f">79°F</span>
+                            </li>
+                            <li><i class="wi wi-raindrop"></i>Weather Condition<span class="value">Showers and Thundershowers</span></li>
+                            <li><i class="wi wi-wind-direction"></i>Wind Direction<span class="value">NNE</span></li>
+                            <li><i class="wi wi-windy"></i>Wind Speed<span class="value">15.0kt|27.8km/h</span></li>
+                            <li><i class="wi wi-raindrop"></i>Rain Amount<span class="value">3mm</span></li>
+                            <li><i class="wi wi-sunrise"></i>Sunrise/Sunset<span class="value">05:30/18:00</span></li>
+                        </ul>
+
+                        <form class="forecast-form" action="/home/passcity" method="post">
+                            <input type="hidden" name="passcity" value="Johannesburg">
+                            <button type="submit">View Detailed Forecast</button>
+                        </form>
+                </div>
+            </div>
+            </div>
+            <div class="hourly-forecast">
                         <h3>Hourly Forecast</h3>
                         <div class="scroll">
                             <div class="hour">
@@ -220,8 +236,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
                     
                 <section>
                     <section id="weather-table">

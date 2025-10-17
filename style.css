@@ -148,7 +148,7 @@ nav ul li{
 main{
     margin: 0;
     width: 100%;
-    background-color: rgb(97, 119, 218);
+    background-color: rgb(221, 222, 230);
     padding: 50px 5%;
 }
 
@@ -199,7 +199,7 @@ main{
     text-align: center;
 }
 
-.current-weather .temp{
+.current-weather h1, p{
     font-size:  2em;
     font-weight: bold;
 }
@@ -224,12 +224,12 @@ main{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-.left {
+/*.left {
     
     padding: 8px;
     border: none;
     width: 100%;
-}
+}*/
 
 .hourly-forecast{
     background-color: #ffffff5e;
@@ -266,7 +266,7 @@ main{
     border-radius: 10px;
     min-width: 100px;
     text-align: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(230, 148, 25, 0.363);
     
 }
 
@@ -274,6 +274,81 @@ main{
     margin: 5px 0;
     font-size: 18px;
 }
+
+/* Main panel container */
+.forecast-panel {
+    background-color: #d6d6d6d5;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Forecast items */
+.forecast-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.forecast-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    color: #000000;
+}
+
+.forecast-list li:last-child {
+    border-bottom: none;
+}
+
+.forecast-list i {
+    color: #007BFF;
+    margin-right: 8px;
+}
+
+/* Button form */
+.forecast-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.forecast-form button {
+    background-color: #2ffd06;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.forecast-form button:hover {
+    background-color: #e0a800;
+}
+
+.top-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.top-section .search .top-section .current-weather .top-section .forecast-panel{
+    flex: 1;
+    min-width: 250;
+}
+
+.search input{
+    width: 100%;
+    max-width:  100%;
+}
+
 footer{
     background-color: #333;
     color: white;
